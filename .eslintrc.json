@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "import"
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "external",
+            "builtin"
+          ],
+          [
+            "parent",
+            "internal"
+          ],
+          [
+            "index",
+            "sibling"
+          ]
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
