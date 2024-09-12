@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react';
+import { initTheme } from '../src/theme';
 
 const preview: Preview = {
   parameters: {
@@ -8,6 +9,9 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+  },
+  beforeAll: async () => {
+    await initTheme();
   },
 };
 

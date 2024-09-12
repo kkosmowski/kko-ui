@@ -14,9 +14,41 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+// todo: set up selects for color, variant, size and disabled
+
+export const Ghost: Story = {
+  name: 'Default (Ghost)',
   args: {
     color: 'primary',
-    children: 'Primary',
+    variant: 'ghost',
+    size: 'md',
+    children: 'Button',
+  },
+};
+
+export const Contained: Story = {
+  args: {
+    color: 'primary',
+    variant: 'contained',
+    size: 'md',
+    children: 'Button',
+  },
+};
+
+export const Outlined: Story = {
+  args: {
+    color: 'primary',
+    variant: 'outlined',
+    size: 'md',
+    children: 'Button',
+  },
+};
+
+export const Text: Story = {
+  args: {
+    color: 'primary',
+    variant: 'text',
+    size: 'md',
+    children: 'Button',
   },
 };
