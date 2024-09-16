@@ -1,0 +1,497 @@
+/* ----- GENERAL ----- */
+.button {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    will-change: background-color;
+}
+
+.button:disabled {
+    cursor: initial;
+}
+
+/* ----- SIZES ----- */
+
+.button:global(.lg) {
+    font-size: 15px;
+    letter-spacing: 1.25px;
+}
+
+.button:global(.lg:not(.text)) {
+    padding: 14px 20px;
+}
+
+.button:global(.md) {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.button:global(.md:not(.text)) {
+    padding: 12px 16px;
+}
+
+.button:global(.sm) {
+    font-size: 13px;
+    letter-spacing: 0.75px;
+}
+
+.button:global(.sm:not(.text)) {
+    padding: 10px 12px;
+}
+
+
+/* ---------------------------------------- PRIMARY ---------------------------------------- */
+/* ----- PRIMARY / GHOST ----- */
+.button:global(.primary:not(.text,.contained)) {
+    color: var(--col-primary-800);
+}
+
+.button:global(.primary:not(.text,.contained)):not(:disabled):hover {
+    background-color: var(--col-primary-500-12);
+}
+
+.button:global(.primary:not(.text,.contained)):not(:disabled):active {
+    background-color: var(--col-primary-500-20);
+    color: var(--col-primary-800);
+}
+
+.button:global(.primary:not(.text,.contained)):disabled {
+    color: var(--col-primary-400);
+}
+
+/* ----- PRIMARY / CONTAINED ----- */
+.button:global(.primary,.contained) {
+    background-color: var(--col-primary-500);
+    color: var(--col-primary-A500);
+}
+
+.button:global(.primary,.contained):not(:disabled):hover {
+    background-color: var(--col-primary-400);
+}
+
+.button:global(.primary,.contained):not(:disabled):active {
+    background-color: var(--col-primary-300);
+}
+
+.button:global(.primary,.contained):disabled {
+    background-color: var(--col-primary-300);
+    color: var(--col-primary-50);
+}
+
+/* ----- PRIMARY / OUTLINED ----- */
+.button:global(.primary,.outlined) {
+    border: 1px solid var(--col-primary-500);
+    color: var(--col-primary-700);
+}
+
+.button:global(.primary,.outlined):not(:disabled):hover {
+    border: 1px solid var(--col-primary-500);
+}
+
+.button:global(.primary,.outlined):not(:disabled):active {
+    border: 1px solid var(--col-primary-700);
+}
+
+.button:global(.primary,.outlined):disabled {
+    border: 1px solid var(--col-primary-200);
+    color: var(--col-primary-400);
+}
+
+/* ----- PRIMARY / TEXT ----- */
+.button:global(.primary,.text) {
+    color: var(--col-primary-800);
+}
+
+.button:global(.primary,.text):not(:disabled):hover {
+    color: var(--col-primary-500);
+}
+
+.button:global(.primary,.text):not(:disabled):active {
+    color: var(--col-primary-300);
+}
+
+.button:global(.primary,.text):disabled {
+    color: var(--col-primary-400);
+}
+
+
+/* ---------------------------------------- SECONDARY ---------------------------------------- */
+/* ----- SECONDARY / GHOST ----- */
+.button:global(.secondary:not(.text,.contained)) {
+    color: var(--col-secondary-800);
+}
+
+.button:global(.secondary:not(.text,.contained)):not(:disabled):hover {
+    background-color: var(--col-secondary-500-12);
+}
+
+.button:global(.secondary:not(.text,.contained)):not(:disabled):active {
+    background-color: var(--col-secondary-500-20);
+    color: var(--col-secondary-800);
+}
+
+.button:global(.secondary:not(.text,.contained)):disabled {
+    color: var(--col-secondary-400);
+}
+
+/* ----- SECONDARY / CONTAINED ----- */
+.button:global(.secondary,.contained) {
+    background-color: var(--col-secondary-500);
+    color: var(--col-secondary-A500);
+}
+
+.button:global(.secondary,.contained):not(:disabled):hover {
+    background-color: var(--col-secondary-400);
+}
+
+.button:global(.secondary,.contained):not(:disabled):active {
+    background-color: var(--col-secondary-300);
+}
+
+.button:global(.secondary,.contained):disabled {
+    background-color: var(--col-secondary-300);
+    color: var(--col-secondary-50);
+}
+
+/* ----- SECONDARY / OUTLINED ----- */
+.button:global(.secondary,.outlined) {
+    border: 1px solid var(--col-secondary-500);
+    color: var(--col-secondary-700);
+}
+
+.button:global(.secondary,.outlined):not(:disabled):hover {
+    border: 1px solid var(--col-secondary-500);
+}
+
+.button:global(.secondary,.outlined):not(:disabled):active {
+    border: 1px solid var(--col-secondary-700);
+}
+
+.button:global(.secondary,.outlined):disabled {
+    border: 1px solid var(--col-secondary-200);
+    color: var(--col-secondary-400);
+}
+
+/* ----- SECONDARY / TEXT ----- */
+.button:global(.secondary,.text) {
+    color: var(--col-secondary-800);
+}
+
+.button:global(.secondary,.text):not(:disabled):hover {
+    color: var(--col-secondary-500);
+}
+
+.button:global(.secondary,.text):not(:disabled):active {
+    color: var(--col-secondary-300);
+}
+
+.button:global(.secondary,.text):disabled {
+    color: var(--col-secondary-400);
+}
+
+
+/* ---------------------------------------- SUCCESS ---------------------------------------- */
+/* ----- SUCCESS / GHOST ----- */
+.button:global(.success:not(.text,.contained)) {
+    color: var(--col-success-800);
+}
+
+.button:global(.success:not(.text,.contained)):not(:disabled):hover {
+    background-color: var(--col-success-500-12);
+}
+
+.button:global(.success:not(.text,.contained)):not(:disabled):active {
+    background-color: var(--col-success-500-20);
+    color: var(--col-success-800);
+}
+
+.button:global(.success:not(.text,.contained)):disabled {
+    color: var(--col-success-400);
+}
+
+/* ----- SUCCESS / CONTAINED ----- */
+.button:global(.success,.contained) {
+    background-color: var(--col-success-500);
+    color: var(--col-success-A500);
+}
+
+.button:global(.success,.contained):not(:disabled):hover {
+    background-color: var(--col-success-400);
+}
+
+.button:global(.success,.contained):not(:disabled):active {
+    background-color: var(--col-success-300);
+}
+
+.button:global(.success,.contained):disabled {
+    background-color: var(--col-success-300);
+    color: var(--col-success-50);
+}
+
+/* ----- SUCCESS / OUTLINED ----- */
+.button:global(.success,.outlined) {
+    border: 1px solid var(--col-success-500);
+    color: var(--col-success-700);
+}
+
+.button:global(.success,.outlined):not(:disabled):hover {
+    border: 1px solid var(--col-success-500);
+}
+
+.button:global(.success,.outlined):not(:disabled):active {
+    border: 1px solid var(--col-success-700);
+}
+
+.button:global(.success,.outlined):disabled {
+    border: 1px solid var(--col-success-200);
+    color: var(--col-success-400);
+}
+
+/* ----- SUCCESS / TEXT ----- */
+.button:global(.success,.text) {
+    color: var(--col-success-800);
+}
+
+.button:global(.success,.text):not(:disabled):hover {
+    color: var(--col-success-500);
+}
+
+.button:global(.success,.text):not(:disabled):active {
+    color: var(--col-success-300);
+}
+
+.button:global(.success,.text):disabled {
+    color: var(--col-success-400);
+}
+
+
+/* ---------------------------------------- INFO ---------------------------------------- */
+/* ----- INFO / GHOST ----- */
+.button:global(.info:not(.text,.contained)) {
+    color: var(--col-info-800);
+}
+
+.button:global(.info:not(.text,.contained)):not(:disabled):hover {
+    background-color: var(--col-info-500-12);
+}
+
+.button:global(.info:not(.text,.contained)):not(:disabled):active {
+    background-color: var(--col-info-500-20);
+    color: var(--col-info-800);
+}
+
+.button:global(.info:not(.text,.contained)):disabled {
+    color: var(--col-info-400);
+}
+
+/* ----- INFO / CONTAINED ----- */
+.button:global(.info,.contained) {
+    background-color: var(--col-info-500);
+    color: var(--col-info-A500);
+}
+
+.button:global(.info,.contained):not(:disabled):hover {
+    background-color: var(--col-info-400);
+}
+
+.button:global(.info,.contained):not(:disabled):active {
+    background-color: var(--col-info-300);
+}
+
+.button:global(.info,.contained):disabled {
+    background-color: var(--col-info-300);
+    color: var(--col-info-50);
+}
+
+/* ----- INFO / OUTLINED ----- */
+.button:global(.info,.outlined) {
+    border: 1px solid var(--col-info-500);
+    color: var(--col-info-700);
+}
+
+.button:global(.info,.outlined):not(:disabled):hover {
+    border: 1px solid var(--col-info-500);
+}
+
+.button:global(.info,.outlined):not(:disabled):active {
+    border: 1px solid var(--col-info-700);
+}
+
+.button:global(.info,.outlined):disabled {
+    border: 1px solid var(--col-info-200);
+    color: var(--col-info-400);
+}
+
+/* ----- INFO / TEXT ----- */
+.button:global(.info,.text) {
+    color: var(--col-info-800);
+}
+
+.button:global(.info,.text):not(:disabled):hover {
+    color: var(--col-info-500);
+}
+
+.button:global(.info,.text):not(:disabled):active {
+    color: var(--col-info-300);
+}
+
+.button:global(.info,.text):disabled {
+    color: var(--col-info-400);
+}
+
+
+/* ---------------------------------------- WARNING ---------------------------------------- */
+/* ----- WARNING / GHOST ----- */
+.button:global(.warning:not(.text,.contained)) {
+    color: var(--col-warning-800);
+}
+
+.button:global(.warning:not(.text,.contained)):not(:disabled):hover {
+    background-color: var(--col-warning-500-12);
+}
+
+.button:global(.warning:not(.text,.contained)):not(:disabled):active {
+    background-color: var(--col-warning-500-20);
+    color: var(--col-warning-800);
+}
+
+.button:global(.warning:not(.text,.contained)):disabled {
+    color: var(--col-warning-400);
+}
+
+/* ----- WARNING / CONTAINED ----- */
+.button:global(.warning,.contained) {
+    background-color: var(--col-warning-500);
+    color: var(--col-warning-A500);
+}
+
+.button:global(.warning,.contained):not(:disabled):hover {
+    background-color: var(--col-warning-400);
+}
+
+.button:global(.warning,.contained):not(:disabled):active {
+    background-color: var(--col-warning-300);
+}
+
+.button:global(.warning,.contained):disabled {
+    background-color: var(--col-warning-300);
+    color: var(--col-warning-50);
+}
+
+/* ----- WARNING / OUTLINED ----- */
+.button:global(.warning,.outlined) {
+    border: 1px solid var(--col-warning-500);
+    color: var(--col-warning-700);
+}
+
+.button:global(.warning,.outlined):not(:disabled):hover {
+    border: 1px solid var(--col-warning-500);
+}
+
+.button:global(.warning,.outlined):not(:disabled):active {
+    border: 1px solid var(--col-warning-700);
+}
+
+.button:global(.warning,.outlined):disabled {
+    border: 1px solid var(--col-warning-200);
+    color: var(--col-warning-400);
+}
+
+/* ----- WARNING / TEXT ----- */
+.button:global(.warning,.text) {
+    color: var(--col-warning-800);
+}
+
+.button:global(.warning,.text):not(:disabled):hover {
+    color: var(--col-warning-500);
+}
+
+.button:global(.warning,.text):not(:disabled):active {
+    color: var(--col-warning-300);
+}
+
+.button:global(.warning,.text):disabled {
+    color: var(--col-warning-400);
+}
+
+
+/* ---------------------------------------- ERROR ---------------------------------------- */
+/* ----- ERROR / GHOST ----- */
+.button:global(.error:not(.text,.contained)) {
+    color: var(--col-error-800);
+}
+
+.button:global(.error:not(.text,.contained)):not(:disabled):hover {
+    background-color: var(--col-error-500-12);
+}
+
+.button:global(.error:not(.text,.contained)):not(:disabled):active {
+    background-color: var(--col-error-500-20);
+    color: var(--col-error-800);
+}
+
+.button:global(.error:not(.text,.contained)):disabled {
+    color: var(--col-error-400);
+}
+
+/* ----- ERROR / CONTAINED ----- */
+.button:global(.error,.contained) {
+    background-color: var(--col-error-500);
+    color: var(--col-error-A500);
+}
+
+.button:global(.error,.contained):not(:disabled):hover {
+    background-color: var(--col-error-400);
+}
+
+.button:global(.error,.contained):not(:disabled):active {
+    background-color: var(--col-error-300);
+}
+
+.button:global(.error,.contained):disabled {
+    background-color: var(--col-error-300);
+    color: var(--col-error-50);
+}
+
+/* ----- ERROR / OUTLINED ----- */
+.button:global(.error,.outlined) {
+    border: 1px solid var(--col-error-500);
+    color: var(--col-error-700);
+}
+
+.button:global(.error,.outlined):not(:disabled):hover {
+    border: 1px solid var(--col-error-500);
+}
+
+.button:global(.error,.outlined):not(:disabled):active {
+    border: 1px solid var(--col-error-700);
+}
+
+.button:global(.error,.outlined):disabled {
+    border: 1px solid var(--col-error-200);
+    color: var(--col-error-400);
+}
+
+/* ----- ERROR / TEXT ----- */
+.button:global(.error,.text) {
+    color: var(--col-error-800);
+}
+
+.button:global(.error,.text):not(:disabled):hover {
+    color: var(--col-error-500);
+}
+
+.button:global(.error,.text):not(:disabled):active {
+    color: var(--col-error-300);
+}
+
+.button:global(.error,.text):disabled {
+    color: var(--col-error-400);
+}
