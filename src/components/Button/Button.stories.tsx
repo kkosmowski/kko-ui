@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { Button } from './Button';
 
-import { buttonVariants, colors, scopedSizes } from '~/storybook';
+import { buttonVariants, colors, scopedSizes } from '~/theme/consts';
 
 const meta: Meta<typeof Button> = {
   title: 'Inputs/Button',

@@ -1,0 +1,45 @@
+/* ----- SIZES ----- */
+.icon:global(.xs) {
+    font-size: 16px;
+}
+
+.icon:global(.sm) {
+    font-size: 20px;
+}
+
+.icon:global(.md) {
+    font-size: 24px;
+}
+
+.icon:global(.lg) {
+    font-size: 28px;
+}
+
+.icon:global(.xl) {
+    font-size: 32px;
+}
+
+/* ----- COLORS ----- */
+.icon:global(.primary) {
+    color: var(--col-primary-600);
+}
+
+.icon:global(.secondary) {
+    color: var(--col-secondary-600);
+}
+
+.icon:global(.success) {
+    color: var(--col-success-600);
+}
+
+.icon:global(.info) {
+    color: var(--col-info-600);
+}
+
+.icon:global(.warning) {
+    color: var(--col-warning-600);
+}
+
+.icon:global(.error) {
+    color: var(--col-error-600);
+}

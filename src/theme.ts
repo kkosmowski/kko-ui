@@ -13,7 +13,17 @@ export const initTheme = async () => {
   style.dataset.name = 'kko-ui';
   style.innerHTML = themeToCss(theme);
 
+  const filledIconsLink = document.createElement('link');
+  filledIconsLink.rel = 'stylesheet';
+  filledIconsLink.href = 'node_modules/material-icons/iconfont/filled.css';
+
+  const outlinedIconsLink = document.createElement('link');
+  outlinedIconsLink.rel = 'stylesheet';
+  outlinedIconsLink.href = 'node_modules/material-icons/iconfont/outlined.css';
+
   document.head.append(style);
+  document.head.append(filledIconsLink);
+  document.head.append(outlinedIconsLink);
 };
 
 void initTheme();
