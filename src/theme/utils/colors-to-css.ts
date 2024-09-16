@@ -1,7 +1,7 @@
 import type { ColorsPalette, Palette } from '~/types/color';
 
 const additionalTransparencies: Record<string, number[]> = {
-  500: [8, 20],
+  500: [12, 20],
 };
 
 const codesToExtend = Object.keys(additionalTransparencies);

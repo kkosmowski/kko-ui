@@ -21,7 +21,7 @@
 
 .button:global(.lg) {
     font-size: 15px;
-    letter-spacing: 0.75px;
+    letter-spacing: 1.25px;
 }
 
 .button:global(.lg:not(.text)) {
@@ -30,7 +30,7 @@
 
 .button:global(.md) {
     font-size: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .button:global(.md:not(.text)) {
@@ -39,7 +39,7 @@
 
 .button:global(.sm) {
     font-size: 13px;
-    letter-spacing: 0.33px;
+    letter-spacing: 0.75px;
 }
 
 .button:global(.sm:not(.text)) {
@@ -54,7 +54,7 @@
 }
 
 .button:global(.primary:not(.text,.contained)):not(:disabled):hover {
-    background-color: var(--col-primary-500-8);
+    background-color: var(--col-primary-500-12);
 }
 
 .button:global(.primary:not(.text,.contained)):not(:disabled):active {
@@ -92,7 +92,7 @@
 }
 
 .button:global(.primary,.outlined):not(:disabled):hover {
-    border: 1px solid var(--col-primary-600);
+    border: 1px solid var(--col-primary-500);
 }
 
 .button:global(.primary,.outlined):not(:disabled):active {
@@ -129,7 +129,7 @@
 }
 
 .button:global(.secondary:not(.text,.contained)):not(:disabled):hover {
-    background-color: var(--col-secondary-500-8);
+    background-color: var(--col-secondary-500-12);
 }
 
 .button:global(.secondary:not(.text,.contained)):not(:disabled):active {
@@ -167,7 +167,7 @@
 }
 
 .button:global(.secondary,.outlined):not(:disabled):hover {
-    border: 1px solid var(--col-secondary-600);
+    border: 1px solid var(--col-secondary-500);
 }
 
 .button:global(.secondary,.outlined):not(:disabled):active {
@@ -204,7 +204,7 @@
 }
 
 .button:global(.success:not(.text,.contained)):not(:disabled):hover {
-    background-color: var(--col-success-500-8);
+    background-color: var(--col-success-500-12);
 }
 
 .button:global(.success:not(.text,.contained)):not(:disabled):active {
@@ -242,7 +242,7 @@
 }
 
 .button:global(.success,.outlined):not(:disabled):hover {
-    border: 1px solid var(--col-success-600);
+    border: 1px solid var(--col-success-500);
 }
 
 .button:global(.success,.outlined):not(:disabled):active {
@@ -279,7 +279,7 @@
 }
 
 .button:global(.info:not(.text,.contained)):not(:disabled):hover {
-    background-color: var(--col-info-500-8);
+    background-color: var(--col-info-500-12);
 }
 
 .button:global(.info:not(.text,.contained)):not(:disabled):active {
@@ -317,7 +317,7 @@
 }
 
 .button:global(.info,.outlined):not(:disabled):hover {
-    border: 1px solid var(--col-info-600);
+    border: 1px solid var(--col-info-500);
 }
 
 .button:global(.info,.outlined):not(:disabled):active {
@@ -354,7 +354,7 @@
 }
 
 .button:global(.warning:not(.text,.contained)):not(:disabled):hover {
-    background-color: var(--col-warning-500-8);
+    background-color: var(--col-warning-500-12);
 }
 
 .button:global(.warning:not(.text,.contained)):not(:disabled):active {
@@ -392,7 +392,7 @@
 }
 
 .button:global(.warning,.outlined):not(:disabled):hover {
-    border: 1px solid var(--col-warning-600);
+    border: 1px solid var(--col-warning-500);
 }
 
 .button:global(.warning,.outlined):not(:disabled):active {
@@ -429,7 +429,7 @@
 }
 
 .button:global(.error:not(.text,.contained)):not(:disabled):hover {
-    background-color: var(--col-error-500-8);
+    background-color: var(--col-error-500-12);
 }
 
 .button:global(.error:not(.text,.contained)):not(:disabled):active {
@@ -467,7 +467,7 @@
 }
 
 .button:global(.error,.outlined):not(:disabled):hover {
-    border: 1px solid var(--col-error-600);
+    border: 1px solid var(--col-error-500);
 }
 
 .button:global(.error,.outlined):not(:disabled):active {

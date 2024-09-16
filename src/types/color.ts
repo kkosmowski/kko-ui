@@ -10,4 +10,8 @@ export type Palette = Record<PaletteCode, string>;
 export type ColorsPalette = {
   primary: Palette;
   secondary: Palette;
+  success: Palette;
+  info: Palette;
+  warning: Palette;
+  error: Palette;
 };
