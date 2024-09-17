@@ -1,3 +1,4 @@
+import { defaultColor } from './colors/default';
 import { primary } from './colors/primary';
 import { secondary } from './colors/secondary';
 import { success } from './colors/success';
@@ -8,6 +9,7 @@ import { error } from './colors/error';
 import type { ColorsPalette } from '~/types/color';
 
 export const colors: ColorsPalette = {
+  default: defaultColor,
   primary,
   secondary,
   success,
