@@ -4,6 +4,7 @@ import styles from './Icon.module.css';
 import type { IconProps, IconVariant } from './Icon.types';
 
 import { colors } from '~/theme/consts';
+import { buildClassName } from '~/utils/build-class-name';
 
 const variants: Record<IconVariant, string> = {
   filled: 'icon material-icons',
@@ -12,7 +13,7 @@ const variants: Record<IconVariant, string> = {
 
 export const Icon = ({ name, variant = 'outlined', size = 'md', color = '' }: IconProps) => {
   const isKnownColor = (colors as string[]).includes(color ?? '');
-  const className = `${styles.icon} ${variants[variant]} ${size} ${isKnownColor ? color : ''}`;
+  const className = buildClassName(styles.icon, variants[variant], size, isKnownColor ? color : '');
   const style = isKnownColor || !color ? {} : { color };
 
   return (

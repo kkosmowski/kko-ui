@@ -35,6 +35,34 @@ export const AllButtons = () => (
     </Grid.Row>
 
     <Grid.Row>
+      <span>Default</span>
+      <Button color="default" variant="ghost" size="md">
+        Button
+      </Button>
+      <Button color="default" variant="ghost" size="md" disabled>
+        Button
+      </Button>
+      <Button color="default" variant="contained" size="md">
+        Button
+      </Button>
+      <Button color="default" variant="contained" size="md" disabled>
+        Button
+      </Button>
+      <Button color="default" variant="outlined" size="md">
+        Button
+      </Button>
+      <Button color="default" variant="outlined" size="md" disabled>
+        Button
+      </Button>
+      <Button color="default" variant="text" size="md">
+        Button
+      </Button>
+      <Button color="default" variant="text" size="md" disabled>
+        Button
+      </Button>
+    </Grid.Row>
+
+    <Grid.Row>
       <span>Primary</span>
       <Button color="primary" variant="ghost" size="md">
         Button
@@ -249,6 +277,34 @@ export const AllButtons = () => (
     </Grid.Row>
 
     <Grid.Row>
+      <span>Default</span>
+      <Button color="default" variant="ghost" size="lg">
+        Button
+      </Button>
+      <Button color="default" variant="ghost" size="sm">
+        Button
+      </Button>
+      <Button color="default" variant="contained" size="lg">
+        Button
+      </Button>
+      <Button color="default" variant="contained" size="sm">
+        Button
+      </Button>
+      <Button color="default" variant="outlined" size="lg">
+        Button
+      </Button>
+      <Button color="default" variant="outlined" size="sm">
+        Button
+      </Button>
+      <Button color="default" variant="text" size="lg">
+        Button
+      </Button>
+      <Button color="default" variant="text" size="sm">
+        Button
+      </Button>
+    </Grid.Row>
+
+    <Grid.Row>
       <span>Primary</span>
       <Button color="primary" variant="ghost" size="lg">
         Button
@@ -380,10 +436,10 @@ export const AllButtons = () => (
       <Button color="warning" variant="outlined" size="sm">
         Button
       </Button>
-      <Button color="primary" variant="text" size="lg">
+      <Button color="warning" variant="text" size="lg">
         Button
       </Button>
-      <Button color="primary" variant="text" size="sm">
+      <Button color="warning" variant="text" size="sm">
         Button
       </Button>
     </Grid.Row>

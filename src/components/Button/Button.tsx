@@ -7,7 +7,7 @@ import type { Color } from '~/types/color';
 import type { ScopedSize } from '~/types/size';
 import { buildClassName } from '~/utils/build-class-name';
 
-const defaultColor: Color = 'primary';
+const defaultColor: Color = 'default';
 const defaultSize: ScopedSize = 'md';
 const defaultVariant: ButtonVariant = 'ghost';
 
