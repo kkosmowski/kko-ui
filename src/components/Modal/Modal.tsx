@@ -16,6 +16,7 @@ export const Modal = (props: ModalProps) => {
     submitButtonProps,
     cancelButtonProps,
     flipButtons = false,
+    wide = false,
     className = '',
     wrapperClassName = '',
     hideBackdrop = false,
@@ -31,10 +32,11 @@ export const Modal = (props: ModalProps) => {
   }
 
   const ModalElement = onFormSubmit ? 'form' : 'aside';
+  const wideClassName = wide ? 'wide' : '';
 
   return (
     <div className={buildClassName(styles.wrapper, wrapperClassName)}>
-      <ModalElement className={buildClassName(styles.modal, className)} onSubmit={onFormSubmit}>
+      <ModalElement className={buildClassName(styles.modal, className, wideClassName)} onSubmit={onFormSubmit}>
         <header className={styles.modalHeader}>
           <h3>{title}</h3>
 

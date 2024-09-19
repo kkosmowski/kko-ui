@@ -97,3 +97,12 @@ export const FormModal: Story = {
     children: <>Modal content</>,
   },
 };
+
+export const Wide: Story = {
+  args: {
+    isOpen: true,
+    title: 'Title',
+    wide: true,
+    children: <>Modal content</>,
+  },
+};

@@ -10,6 +10,7 @@ export type ModalProps = Omit<HTMLAttributes<HTMLDivElement>, 'onSubmit'> & {
   cancelButtonProps?: ButtonProps;
   submitButtonProps?: ButtonProps;
   flipButtons?: boolean;
+  wide?: boolean;
   children: ReactNode;
   wrapperClassName?: string;
   hideBackdrop?: boolean;
